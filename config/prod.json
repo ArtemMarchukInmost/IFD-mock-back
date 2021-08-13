@@ -1,0 +1,42 @@
+{
+  "general": {
+    "host": "https://ifd-mock.herokuapp.com/",
+    "port": 6000,
+    "link": "https://ifd-mock.herokuapp.com/",
+    "paginationLimit": 10,
+    "fullMode": true
+  },
+  "loading": {
+    "simulateLoading": false,
+    "maxLoading": 500,
+    "minLoading": 100
+  },
+  "morgan": {
+    "morganBody": false
+  },
+  "database": {
+    "user": "postgres",
+    "host": "localhost",
+    "database": "postgres",
+    "password": "C1XQT9p8w&inWUxymCi@qUDFu1Nym!SdH6Fn2MK4izlKZ98Vx4",
+    "port": 5432
+  },
+  "JWT": {
+    "secret": {
+      "admin": {
+        "accessToken": "r@N0&Vj5dy#lOc*Na@yT3zalccIiJb",
+        "refreshToken": "yThfRQS2&PBLn*E&^g$T1&OyF2Wp5D"
+      },
+      "user": {
+        "accessToken": "NZUstKoMSr!^n%Vb*P7A5Nyq%5!$rz",
+        "refreshToken": "hKHj#GnQuLrsQ$xgAQSXWgLJTpCBX1",
+        "passwordForgotToken": "a$4ACy7pw&zKokDORyla2#L@U3H1lA"
+      }
+    },
+    "lifetime": {
+      "accessToken": "30d",
+      "refreshToken": "60d",
+      "passwordForgotToken": "20m"
+    }
+  }
+}
