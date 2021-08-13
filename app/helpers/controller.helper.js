@@ -1,11 +1,8 @@
-const config = require('./config.helper');
 const doom = require('./doom.helper');
 
 function simulateLoading() {
     return new Promise(resolve => {
-        let maxLoading = config.loading.maxLoading - config.loading.minLoading;
-        let minLoading = config.loading.minLoading;
-        let timeout = Math.floor(Math.random() * maxLoading) + minLoading;
+        let timeout = Math.floor(Math.random() * 500) + 100;
         setTimeout(() => {
             resolve();
         }, timeout);
@@ -25,9 +22,7 @@ async function sendJson(res, action, status = doom.status.ok) {
         throw new Error('Transaction not correct.');
     }
 
-    if (config.loading.simulateLoading) {
-        await simulateLoading();
-    }
+    await simulateLoading();
 
     if (result.success) {
         return res.status(status).json({

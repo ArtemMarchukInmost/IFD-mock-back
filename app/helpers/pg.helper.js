@@ -1,5 +1,3 @@
-let config = require('./config.helper');
-
 module.exports = {
     firstResultOrNull: (sql) => {
         const {rows} = sql;
@@ -39,7 +37,6 @@ module.exports = {
         if (page === undefined) return sql + '';
         page -= 1;
 
-        limit = limit || config.database.limit;
         page = page * limit;
 
         return sql + `OFFSET ${page} LIMIT ${limit}`;
