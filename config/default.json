@@ -1,0 +1,19 @@
+{
+  "morgan": {
+    "name": "format",
+    "format": "[:date[web]] [:remote-addr]\":method :url\" :status :res[content-length] - :response-time ms"
+  },
+  "aws": {
+    "s3": {
+      "bucketName": "speedy-backend",
+      "region": "eu-east-1",
+      "accessKeyId": "AKIA5YNHD3WQ3VTQVI7L",
+      "secretAccessKey": "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",
+      "s3Url": "https://speedy-backend.s3.amazonaws.com/",
+      "s3UrlSpeech": "https://speedy-backend.s3.amazonaws.com/speech",
+      "dir": {
+        "speech": "speech"
+      }
+    }
+  }
+}
