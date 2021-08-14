@@ -24,9 +24,7 @@
     "express-fileupload": "^1.2.1",
     "morgan": "^1.10.0",
     "morgan-body": "^2.6.6",
-    "nodemon": "^2.0.12"
-  },
-  "devDependencies": {
+    "nodemon": "^2.0.12",
     "@hapi/joi": "^17.1.1",
     "aws-sdk": "^2.967.0",
     "casual": "^1.6.2",
