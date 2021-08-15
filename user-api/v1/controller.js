@@ -17,7 +17,16 @@ const userInfo = {
     }
 }
 
+const datesWithEntries = {
+    get: async (req, res) => {
+        await controller.sendJson(res, async (connection) => {
+            return await service.datesWithEntries.get(connection, req.options);
+        });
+    }
+}
+
 module.exports = {
     example,
     userInfo,
+    datesWithEntries,
 };

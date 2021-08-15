@@ -14,7 +14,14 @@ const userInfo = {
     }
 };
 
+const datesWithEntries = {
+    get: () => {
+        return mock.datesWithEntries;
+    }
+};
+
 module.exports = {
     example,
     userInfo,
+    datesWithEntries,
 };

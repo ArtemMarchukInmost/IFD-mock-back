@@ -22,7 +22,20 @@ const userInfo = {
     },
 }
 
+const datesWithEntries = {
+    get: async (connection, options) => {
+        const result = converter.datesWithEntries.get(options);
+
+        return {
+            'success': true,
+            'result': result,
+        }
+    },
+}
+
+
 module.exports = {
     example,
-    userInfo
+    userInfo,
+    datesWithEntries
 };

@@ -11,4 +11,8 @@ router.get('/userInfo',
     asyncHandler(controller.userInfo.get)
 );
 
+router.get('/datesWithEntries',
+    asyncHandler(controller.datesWithEntries.get)
+);
+
 module.exports = router;
