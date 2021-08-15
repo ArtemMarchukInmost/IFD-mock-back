@@ -9,6 +9,15 @@ const example = {
     }
 }
 
+const userInfo = {
+    get: async (req, res) => {
+        await controller.sendJson(res, async (connection) => {
+            return await service.userInfo.get(connection, req.options);
+        });
+    }
+}
+
 module.exports = {
     example,
+    userInfo,
 };

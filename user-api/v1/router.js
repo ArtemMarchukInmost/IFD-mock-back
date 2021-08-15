@@ -7,4 +7,8 @@ router.get('/example',
     asyncHandler(controller.example.get)
 );
 
+router.get('/userInfo',
+    asyncHandler(controller.userInfo.get)
+);
+
 module.exports = router;

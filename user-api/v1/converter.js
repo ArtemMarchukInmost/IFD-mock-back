@@ -8,6 +8,13 @@ const example = {
     }
 };
 
+const userInfo = {
+    get: () => {
+        return {...mock.userInfo.userInfo};
+    }
+};
+
 module.exports = {
     example,
+    userInfo,
 };

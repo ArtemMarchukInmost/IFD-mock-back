@@ -11,6 +11,18 @@ const example = {
     },
 }
 
+const userInfo = {
+    get: async (connection, options) => {
+        const result = converter.userInfo.get(options);
+
+        return {
+            'success': true,
+            'result': result,
+        }
+    },
+}
+
 module.exports = {
-    example
+    example,
+    userInfo
 };
