@@ -16,7 +16,9 @@ const userInfo = {
 
 const datesWithEntries = {
     get: () => {
-        return mock.datesWithEntries;
+        return {
+            list: mock.datesWithEntries.openDates
+        };
     }
 };
 

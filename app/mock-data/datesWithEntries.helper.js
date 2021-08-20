@@ -8,7 +8,7 @@ casual.define(type, function () {
     for (let i = 0; i < casual.integer(5, 15); i++) {
         const date = new Date();
         date.setDate(date.getDate() + casual.integer(-15, 15));
-        dates.push(date.getTime());
+        dates.push(date.toISOString());
     }
 
     return dates;
