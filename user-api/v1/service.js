@@ -33,9 +33,20 @@ const datesWithEntries = {
     },
 }
 
+const workshopsProgress = {
+    get: async (connection, options) => {
+        const result = converter.workshopsProgress.get(options);
+
+        return {
+            'success': true,
+            'result': result,
+        }
+    },
+}
 
 module.exports = {
     example,
     userInfo,
-    datesWithEntries
+    datesWithEntries,
+    workshopsProgress
 };

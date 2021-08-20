@@ -25,8 +25,18 @@ const datesWithEntries = {
     }
 }
 
+const workshopsProgress = {
+    get: async (req, res) => {
+        await controller.sendJson(res, async (connection) => {
+            return await service.workshopsProgress.get(connection, req.options);
+        });
+    }
+}
+
+
 module.exports = {
     example,
     userInfo,
     datesWithEntries,
+    workshopsProgress,
 };

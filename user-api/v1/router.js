@@ -15,4 +15,8 @@ router.get('/datesWithEntries',
     asyncHandler(controller.datesWithEntries.get)
 );
 
+router.get('/workshopsProgress',
+    asyncHandler(controller.workshopsProgress.get)
+);
+
 module.exports = router;

@@ -22,8 +22,17 @@ const datesWithEntries = {
     }
 };
 
+const workshopsProgress = {
+    get: () => {
+        return {
+            ...mock.workshopsProgress.workshopsCompleted
+        };
+    }
+};
+
 module.exports = {
     example,
     userInfo,
     datesWithEntries,
+    workshopsProgress,
 };
