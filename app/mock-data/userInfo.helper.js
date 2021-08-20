@@ -3,16 +3,25 @@ const casual = require('casual');
 const type = 'userInfo';
 
 casual.define(type, function () {
-    const image = 'https://sunmag.me/wp-content/uploads/2016/05/gipnoz1.jpg';
-    const background = 'https://img.strana.ua/img/article/2625/70_main.jpeg';
-    const progress = casual.integer(50, 100);
-    const workshopsCompleted = casual.integer(0, 6);
+    const avatar = 'https://sunmag.me/wp-content/uploads/2016/05/gipnoz1.jpg';
+    const background = null;
+    const welcomeName = `${casual.letter.toUpperCase()}${casual.word}`;
+    const firstName = `${casual.letter.toUpperCase()}${casual.word}`;
+    const lastName = `${casual.letter.toUpperCase()}${casual.word}`;
+    const email = casual.email;
+    const mobile = '+' + casual.integer(1111111111, 9999999999);
+    const emergencyNumber = '+' + casual.integer(1111111111, 9999999999);
+
 
     return {
-        userPicture: image,
-        backgroundPicture: background,
-        progress,
-        workshopsCompleted,
+        avatar,
+        background,
+        welcomeName,
+        firstName,
+        lastName,
+        email,
+        mobile,
+        emergencyNumber
     }
 });
 
