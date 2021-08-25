@@ -3,7 +3,7 @@ const casual = require('casual');
 const type = 'userInfo';
 
 casual.define(type, function () {
-    const avatar = 'https://sunmag.me/wp-content/uploads/2016/05/gipnoz1.jpg';
+    const avatar = null;
     const background = 'BACKGROUND_2';
     const welcomeName = `${casual.letter.toUpperCase()}${casual.word}`;
     const firstName = `${casual.letter.toUpperCase()}${casual.word}`;
