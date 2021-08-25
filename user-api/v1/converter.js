@@ -30,9 +30,18 @@ const workshopsProgress = {
     }
 };
 
+const workshopsParts = {
+    get: () => {
+        return {
+            list: mock.workshopsParts.workshopsParts
+        };
+    }
+};
+
 module.exports = {
     example,
     userInfo,
     datesWithEntries,
     workshopsProgress,
+    workshopsParts,
 };

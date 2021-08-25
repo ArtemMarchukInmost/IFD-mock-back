@@ -44,9 +44,21 @@ const workshopsProgress = {
     },
 }
 
+const workshopsParts = {
+    get: async (connection, options) => {
+        const result = converter.workshopsParts.get(options);
+
+        return {
+            'success': true,
+            'result': result,
+        }
+    },
+}
+
 module.exports = {
     example,
     userInfo,
     datesWithEntries,
-    workshopsProgress
+    workshopsProgress,
+    workshopsParts
 };

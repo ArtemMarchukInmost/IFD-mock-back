@@ -19,4 +19,8 @@ router.get('/workshopsProgress',
     asyncHandler(controller.workshopsProgress.get)
 );
 
+router.get('/workshopsParts',
+    asyncHandler(controller.workshopsParts.get)
+);
+
 module.exports = router;

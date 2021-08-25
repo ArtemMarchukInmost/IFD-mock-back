@@ -33,10 +33,18 @@ const workshopsProgress = {
     }
 }
 
+const workshopsParts = {
+    get: async (req, res) => {
+        await controller.sendJson(res, async (connection) => {
+            return await service.workshopsParts.get(connection, req.options);
+        });
+    }
+}
 
 module.exports = {
     example,
     userInfo,
     datesWithEntries,
     workshopsProgress,
+    workshopsParts,
 };

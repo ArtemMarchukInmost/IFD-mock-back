@@ -3,4 +3,5 @@ module.exports = {
     userInfo: require('./userInfo.helper'),
     datesWithEntries: require('./datesWithEntries.helper'),
     workshopsProgress: require('./workshopsProgress.helper'),
+    workshopsParts: require('./workshopsParts.helper'),
 };
