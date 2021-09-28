@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "start-local":  "nodemon server.js"
+    "start-local": "nodemon server.js",
+    "start-ws": "node ws.js",
+    "start-ws-local": "nodemon ws.js"
   },
   "repository": {
     "type": "git",
@@ -19,18 +21,20 @@
   },
   "homepage": "https://github.com/ArtemMarchukInmost/IFD-mock-back#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "express-async-handler": "^1.1.4",
-    "express-fileupload": "^1.2.1",
-    "morgan": "^1.10.0",
-    "morgan-body": "^2.6.6",
-    "nodemon": "^2.0.12",
     "aws-sdk": "^2.967.0",
+    "body-parser": "^1.19.0",
     "casual": "^1.6.2",
     "config": "^3.3.6",
     "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-fileupload": "^1.2.1",
+    "express-ws": "^5.0.2",
     "jsonwebtoken": "^8.5.1",
-    "uuid": "^8.3.2"
+    "morgan": "^1.10.0",
+    "morgan-body": "^2.6.6",
+    "nodemon": "^2.0.12",
+    "uuid": "^8.3.2",
+    "ws": "^8.2.2"
   }
 }
